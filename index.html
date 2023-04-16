@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <div class="maincal">
+         <h2>calculator</h2>
+      <div class="calculator">
+         <div class="screen1">
+            <input id = "result" type="text" class="form-controll">
+         </div>
+         <div class="mainkey">
+            <button onclick="allClear()" class="subkey span-two">AC</button>
+            <button onclick="displayData('%')" class="subkey keyoperator">%</button>
+            <button onclick="displayData('*')" class="subkey keyoperator">*</button>
+            <button onclick="backSpace()" class="subkey keyoperator">&#9224;</button>
+            <button onclick="displayData('+')" class="subkey keyoperator">+</button>
+            <button onclick="displayData('-')" class="subkey keyoperator">-</button>
+            
+            <button onclick="displayData('/')" class="subkey keyoperator">/</button>
+            
+            <button onclick="displayData(7)" class="subkey">7</button>
+            <button onclick="displayData(8)" class="subkey">8</button>
+            <button onclick="displayData(9)" class="subkey">9</button>
+            <button onclick="displayData(4)" class="subkey">4</button>
+            <button onclick="displayData(5)" class="subkey">5</button>
+            <button onclick="displayData(6)" class="subkey">6</button>
+            <button onclick="displayData(1)" class="subkey">1</button>
+            <button onclick="displayData(2)" class="subkey">2</button>
+            <button onclick="displayData(3)" class="subkey">3</button>
+            <button onclick="displayData(0)" class="subkey">0</button>
+            <button onclick="displayData('.')" class="subkey">.</button>
+            
+            <button onclick="evalExpression()" class="subkey enterkey">=</button>
+         </div>
+      </div>
+   </div>
+</body>
+<script src="./calc.js"></script>
+</html>

@@ -1,0 +1,79 @@
+
+.maincal{
+   margin-top: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+h2{
+   position: absolute;
+   top: -50px;
+   text-transform: capitalize;
+   filter: drop-shadow(4px 0px 2px aqua);
+   color: rgb(255, 0, 43);
+}
+h2:hover{
+   color: aqua;
+   filter: drop-shadow(4px 0px 2px rgb(255, 0, 43));;
+}
+.calculator{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   max-inline-size: 22rem;
+   /* border-radius: 10px; */
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   overflow: hidden;
+   box-shadow: 19px 15px 20px  rgba(180, 76, 154, 0.671);
+}
+.screen1{
+   font-size: 2rem;
+   text-align: end;
+   color: rgb(50, 2, 242);
+   box-shadow: inset 5px 5px 20px rgb(132, 230, 239);
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   padding-top: 0.25rem;
+   padding-bottom: 1.25rem;
+   padding-right: .75rem;
+}
+.form-controll{
+   border: none;
+   outline: none;
+   padding: 1fr;
+   /* background-color: blue; */
+   padding: 25px;
+   font-size: 1.2rem;
+   filter: blur(.3px);
+   background: none;
+   color: rgba(180, 76, 154, 0.671);
+}
+.mainkey{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   border-radius: 10px;
+}
+.enterkey{
+   grid-column: 4/5;
+   grid-row: 2/span 5;
+}
+.subkey{
+   border: 1px solid white;
+   font-size: 1.5rem;
+   padding-block-start: 0.5rem; 
+  padding-block-end: 0.5rem; 
+  padding-inline-start: 1.25rem; 
+  padding-inline-end: 1.25rem; 
+  font-size: 1.5rem;
+  background: rgb(217, 251, 254);
+  color: rgba(216, 112, 147, 0.655);
+  cursor: pointer;
+  
+}
+.subkey:hover{
+   box-shadow: inset 0px 0px 10px rgb(132, 230, 239);
+   /* border-radius: 5px; */
+   color: aqua;
+}
